@@ -89,6 +89,7 @@ public class Bitacora implements Serializable {
     private Bitacora(Builder builder) {
 
         this.idSesion = builder.contexto.getIdSesion();
+        this.idUsuario = builder.contexto.getIdUsuario();
         this.usuario = builder.contexto.getUsuario();
         this.nombrePantalla = builder.contexto.getNombrePantalla();
         this.tipoPantalla = builder.contexto.getTipoPantalla();
@@ -152,6 +153,10 @@ public class Bitacora implements Serializable {
         return idSesion;
     }
 
+    public Integer getIdUsuario() {
+        return idUsuario;
+    }
+
     public String getUsuario() {
         return usuario;
     }
@@ -204,6 +209,7 @@ public class Bitacora implements Serializable {
     @Override
     public String toString() {
         return "Bitacora [idSesion=" + idSesion
+                + ", idUsuario=" + idUsuario
                 + ", usuario=" + usuario
                 + ", momento=" + getFecha() + " " + getHora()
                 + ", nombrePantalla=" + nombrePantalla

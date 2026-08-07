@@ -124,4 +124,9 @@ public interface BitacoraBL {
 
         return filtros;
     }
+
+    public default void limpiarEventos(List<Bitacora> evetos) {
+        evetos.clear();
+        evetos = new ArrayList<>();
+    }
 }
