@@ -6,7 +6,7 @@
   <groupId>com.ferbo.bitacora</groupId>
   <artifactId>ferbo-bitacora</artifactId>
   <packaging>jar</packaging>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0.0-SNAPSHOT</version>
 
   <name>ferbo-bitacora</name>
   <description>Bitácora operativa para el registro y seguimiento de los eventos que ocurren dentro del ecosistema de la empresa.</description>
@@ -99,4 +99,13 @@
             </plugin>
     </plugins>
   </build>
+
+  <distributionManagement>
+		<repository>
+			<id>github</id>
+			<name>GitHub eabadillom Apache Maven Packages</name>
+			<url>https://maven.pkg.github.com/eabadillom/ferbo-bitacora</url>
+		</repository>
+	</distributionManagement>
+
 </project>
